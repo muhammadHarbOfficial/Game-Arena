@@ -17,6 +17,11 @@ body {
     height: 3000px;
 }
 
+.container {
+    padding-inline: 30px;
+    width: calc(100% - 60px);
+}
+
 .bg-main {
     background-color: var(--main-color);
 }
@@ -112,7 +117,7 @@ nav {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .hero-text p {

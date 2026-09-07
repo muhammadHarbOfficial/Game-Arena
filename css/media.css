@@ -1,7 +1,30 @@
+@media (max-width: 767px) {
+    .home button {
+        display: block;
+        width: 100%;
+    }
+}
 @media (max-width: 991px) {
     .navbar-nav {
         border-bottom: 1px solid rgba(128, 128, 128, .2);
         border-top: 1px solid rgba(128, 128, 128, .2);
     }
-    
+    .home {
+        text-align: center;
+        padding-bottom: 60px;
+        overflow-x: hidden;
+    }
+    .home .hero-text {
+        margin-bottom: 40px;
+        margin-top: 160px;
+    }
+
+    .home .hero-text h1 {
+        font-size: 40px;
+    }
+    .home .btn-shine {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
 }
