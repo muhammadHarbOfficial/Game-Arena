@@ -19,7 +19,6 @@ body {
 
 .container {
     padding-inline: 30px;
-    width: calc(100% - 60px);
 }
 
 .bg-main {
