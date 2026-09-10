@@ -1,5 +1,6 @@
 :root {
     --main-color: #cbfe1c;
+    --bg-color: #0B0E13;
 }
 
 *, *::after, *::before {
@@ -82,7 +83,7 @@ p {
 
 /*? Start Navbar */
 nav {
-    background-color: #0B0E13;
+    background-color: var(--bg-color);
 }
 .nav-item .nav-link, .nav-icon li {
     color: #fff;
@@ -102,6 +103,41 @@ nav {
     border: none;
 }
 
+.heading span {
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.heading span::before, .heading span::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.heading span::before {
+    left: -80%;
+    background: linear-gradient(to right, transparent, var(--main-color));
+}
+
+.heading span::after {
+    right: -80%;
+    background: linear-gradient(to left, transparent, var(--main-color));
+}
+
+.heading h2 {
+    font-size: 48px;
+}
+
+main {
+    background-color: var(--bg-color);
+}
 /*? End Navbar */
 
 /*? Start Home Section */
@@ -142,3 +178,9 @@ h1 {
 }
 
 /*? End Home Section */
+
+/*? Start Our Games Section */
+
+
+
+/*? End Our Games Section */
